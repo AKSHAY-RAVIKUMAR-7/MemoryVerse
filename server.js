@@ -264,7 +264,7 @@ app.post("/api/admin/final-video", requireAdmin, upload.single("video"), (req, r
     });
   });
 });
-
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Birthday celebration server running at http://localhost:${PORT}`);
 });
