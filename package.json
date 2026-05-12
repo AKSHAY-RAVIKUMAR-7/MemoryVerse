@@ -1,0 +1,18 @@
+{
+  "name": "birthday-celebration",
+  "version": "1.0.0",
+  "description": "Birthday celebration app with login, wishes, and shared media storage",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["birthday", "express", "sqlite"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1",
+    "sqlite3": "^5.1.7"
+  }
+}

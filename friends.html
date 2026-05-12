@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends Contributions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="friends.css" />
+    <script defer src="friends.js"></script>
+  </head>
+  <body>
+    <main class="friend-shell">
+      <section class="friend-card">
+        <h1>Friends Contribution</h1>
+        <p class="sub">Add your name, birthday wish, and upload photos/videos.</p>
+
+        <form id="contribution-form" class="friend-form">
+          <label for="friend-name">Your Name</label>
+          <input id="friend-name" name="name" type="text" maxlength="60" required />
+
+          <label for="friend-wish">Your Wish</label>
+          <textarea id="friend-wish" name="message" rows="5" maxlength="800" required></textarea>
+
+          <label for="friend-media">Upload Photos/Videos</label>
+          <input id="friend-media" name="media" type="file" accept="image/*,video/*" multiple />
+
+          <button id="submit-button" type="submit">Submit Contribution</button>
+          <p id="status" class="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

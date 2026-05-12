@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday HEMA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="viewer.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <main class="viewer-shell">
+      <section id="hema-greeting" class="greeting-card">
+        <h1>Happy Birthday HEMA</h1>
+        <p>Wishing you a day filled with warmth, laughter, and the love you give to everyone around you.</p>
+      </section>
+
+      <section class="panel" id="memories-panel" hidden>
+        <h2 class="section-title">MEMORIES</h2>
+        <div class="thread-wrap">
+          <div class="thread-line" aria-hidden="true"></div>
+          <div id="memories-list" class="memories-list">
+            <p class="empty">No memories uploaded yet.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="moments-panel" hidden>
+        <h2 class="section-title">MOMENTS</h2>
+        <div id="moments-list" class="moments-list">
+          <p class="empty">No memories uploaded yet.</p>
+        </div>
+      </section>
+
+      <section class="panel" id="wishes-panel" hidden>
+        <h2 class="section-title">WISHES</h2>
+        <div id="wishes-list" class="wishes-list">
+          <p class="empty">No wishes yet.</p>
+        </div>
+      </section>
+
+      <section class="panel final-video-panel" id="final-video-panel" hidden>
+        <video id="final-video-player" controls playsinline></video>
+      </section>
+    </main>
+  </body>
+</html>

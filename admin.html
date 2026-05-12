@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="admin.css" />
+    <script defer src="admin.js"></script>
+  </head>
+  <body>
+    <main class="admin-shell">
+      <section class="admin-panel">
+        <div class="admin-header">
+          <h1>Admin Dashboard</h1>
+          <button id="logout-button" type="button">Logout</button>
+        </div>
+
+        <section class="block">
+          <h2>FINAL VIDEO</h2>
+          <div class="final-upload-row">
+            <input id="final-video-input" type="file" accept="video/*" />
+            <button id="upload-final-video" type="button">Upload Final Video</button>
+          </div>
+          <p id="final-video-status" class="status"></p>
+        </section>
+
+        <section class="block">
+          <h2>MEMORIES</h2>
+          <div id="memories-list" class="memories-list">
+            <p class="empty">No memories available.</p>
+          </div>
+        </section>
+
+        <section class="block">
+          <h2>WISHES</h2>
+          <div id="wishes-list" class="wishes-list">
+            <p class="empty">No wishes available.</p>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

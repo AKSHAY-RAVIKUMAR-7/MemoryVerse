@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="auth.css" />
+    <script defer src="login.js"></script>
+  </head>
+  <body>
+    <main class="auth-shell">
+      <section class="auth-card">
+        <h1>Birthday Access</h1>
+        <p class="sub">Select role and login.</p>
+
+        <form id="login-form" class="auth-form">
+          <label for="role">Account</label>
+          <select id="role" required>
+            <option value="admin">Admin</option>
+            <option value="hema">HEMA</option>
+            <option value="friends">Friends</option>
+          </select>
+
+          <label for="password">Password</label>
+          <input id="password" type="password" autocomplete="current-password" required />
+
+          <button type="submit">Continue</button>
+          <p id="error" class="error" hidden>Invalid role or password.</p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
